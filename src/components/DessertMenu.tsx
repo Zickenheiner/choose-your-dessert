@@ -1,3 +1,4 @@
+import "../styles/DessertMenu.css";
 import data from "../data.json";
 import MenuItem from "./MenuItem";
 
