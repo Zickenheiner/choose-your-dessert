@@ -1,0 +1,23 @@
+.button-item {
+    background-color: white;
+    width: 50%;
+    height: 40px;
+    margin-top: -40px;
+    border: 0.5px solid black;
+    border-radius: 50px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.button-item:hover {
+    background-color: #f4f4f4;
+}
+
+.img-add-to-card {
+    width: 20px;
+}

@@ -2,28 +2,27 @@ import "../styles/MenuItem.css";
 import ButtonItem from "./ButtonItem";
 
 interface Item {
-  item: {
-    image: {
-      thumbnail: string;
-      mobile: string;
-      tablet: string;
-      desktop: string;
-    };
-    name: string;
-    category: string;
-    price: number;
+  name: string;
+  image: {
+    thumbnail: string;
+    mobile: string;
+    tablet: string;
+    desktop: string;
   };
+  category: string;
+  price: number;
 }
 
-export default function MenuItem({ item }: Item) {
-  const { image, name, category, price } = item;
+export default function MenuItem({ name, image, category, price }: Item) {
   return (
-    <div>
+    <article>
       <img src={image.mobile} alt="img-dessert" />
       <ButtonItem />
-      <p>{category}</p>
-      <h2>{name}</h2>
-      <h3>{price}</h3>
-    </div>
+      <section className="text-container">
+        <p className="text-caterogy">{category}</p>
+        <h2 className="text-name">{name}</h2>
+        <h3>${price.toFixed(2)}</h3>
+      </section>
+    </article>
   );
 }
