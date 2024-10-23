@@ -15,8 +15,8 @@ interface Item {
 
 export default function MenuItem({ name, image, category, price }: Item) {
   return (
-    <article>
-      <img src={image.mobile} alt="img-dessert" />
+    <article className="item-dessert">
+      <img src={image.mobile} alt="img-dessert" className="img-dessert" />
       <ButtonItem />
       <section className="text-container">
         <p className="text-caterogy">{category}</p>
