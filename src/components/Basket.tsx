@@ -1,12 +1,14 @@
 import "../styles/Basket.css";
-import { useState } from "react";
 import EmptyBasket from "./EmptyBasket";
 
-export default function Basket() {
-  const [numberArticle, setNumberArticle] = useState(0);
+interface BasketProps {
+  allNumberArticle: number;
+}
+
+export default function Basket({ allNumberArticle }: BasketProps) {
   return (
     <section className="basket">
-      <h2>Your Cart ({numberArticle})</h2>
+      <h2>Your Cart ({allNumberArticle})</h2>
       <EmptyBasket />
     </section>
   );
