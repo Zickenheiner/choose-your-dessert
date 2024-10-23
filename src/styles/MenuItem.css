@@ -1,4 +1,4 @@
-img {
+.img-dessert {
     width: 100%;
     border-radius: 10px;
     margin: 20px 0 20px 0;
@@ -10,7 +10,7 @@ h3 {
     font-weight: 500;
 }
 
-article {
+.item-dessert {
     display: flex;
     flex-direction: column;
     align-items: center;

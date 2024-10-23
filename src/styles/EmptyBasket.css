@@ -1,0 +1,11 @@
+.empty-basket-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 20px 0;
+    color: rgb(166, 138, 108);
+}
+
+.img-empty-basket {
+    width: 200px;
+}
