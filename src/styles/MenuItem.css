@@ -1,0 +1,35 @@
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0 20px 0;
+    z-index: -0;
+}
+
+h3 {
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0 20px 0;
+    gap: 7px;
+}
+
+.text-caterogy {
+    color: rgb(149, 149, 149);
+    font-size: 1rem;
+}
+
+.text-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
