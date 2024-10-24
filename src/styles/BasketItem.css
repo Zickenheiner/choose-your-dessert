@@ -1,0 +1,56 @@
+.basket-item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid rgb(196, 196, 196);
+    padding: 20px 0 20px 0;
+}
+
+.basket-item-info-constainer {
+    display: flex;
+    gap: 10px;
+}
+
+.basket-item-name {
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.basket-item-number {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.basket-item-price {
+    color: rgb(149, 149, 149);
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.basket-item-price-multiply-number {
+    color: rgb(122, 116, 116);
+    font-size: 14px;
+}
+
+.basket-item-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.delete-item-basket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #CDBAB3;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.delete-item-basket:hover {
+    background-color: rgb(220, 220, 220);
+}

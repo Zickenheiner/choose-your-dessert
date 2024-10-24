@@ -1,42 +1,56 @@
-import { useState } from "react";
 import "../styles/MenuItem.css";
 import ButtonItem from "./ButtonItem";
-
-interface Item {
-  name: string;
-  image: {
-    thumbnail: string;
-    mobile: string;
-    tablet: string;
-    desktop: string;
-  };
-  category: string;
-  price: number;
-  allNumberArticle: number;
-  setAllNumberArticle: (index: number) => void;
-}
+import ReplacementButtonItem from "./ReplacementButtonItem";
+import type { Element, ItemProps } from "../type";
 
 export default function MenuItem({
   name,
   image,
   category,
   price,
+  id,
   allNumberArticle,
   setAllNumberArticle,
-}: Item) {
-  const [numberArticle, setNumberArticle] = useState<number>(0);
+  setElements,
+  elements,
+}: ItemProps) {
+  const itemInCart = elements.find((item) => item.id === id);
+  const numberArticle = itemInCart ? itemInCart.number : 0;
+
+  const element: Element = {
+    name: name,
+    price: price,
+    number: 1,
+    id: id,
+  };
 
   return (
     <article className="item-dessert">
-      <img src={image.mobile} alt="img-dessert" className="img-dessert" />
+      <img
+        src={image.mobile}
+        alt="img-dessert"
+        className={
+          numberArticle === 0 ? "img-dessert" : "img-dessert-border img-dessert"
+        }
+      />
       {numberArticle === 0 ? (
         <ButtonItem
+          allNumberArticle={allNumberArticle}
+          setAllNumberArticle={setAllNumberArticle}
+          setElements={setElements}
+          element={element}
+          elements={elements}
+        />
+      ) : (
+        <ReplacementButtonItem
           numberArticle={numberArticle}
           allNumberArticle={allNumberArticle}
-          setNumberArticle={setNumberArticle}
           setAllNumberArticle={setAllNumberArticle}
+          setElements={setElements}
+          element={element}
+          elements={elements}
         />
-      ) : null}
+      )}
       <section className="text-container">
         <p className="text-caterogy">{category}</p>
         <h2 className="text-name">{name}</h2>

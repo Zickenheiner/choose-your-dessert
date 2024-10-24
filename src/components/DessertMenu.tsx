@@ -1,15 +1,13 @@
 import "../styles/DessertMenu.css";
+import type { DessertMenuProps } from "../type";
 import data from "../data.json";
 import MenuItem from "./MenuItem";
-
-interface DessertMenuProps {
-  allNumberArticle: number;
-  setAllNumberArticle: (index: number) => void;
-}
 
 export default function DessertMenu({
   allNumberArticle,
   setAllNumberArticle,
+  setElements,
+  elements,
 }: DessertMenuProps) {
   return (
     <section>
@@ -20,9 +18,12 @@ export default function DessertMenu({
           image={item.image}
           category={item.category}
           price={item.price}
-          key={item.name}
+          id={item.id}
+          key={item.id}
           allNumberArticle={allNumberArticle}
           setAllNumberArticle={setAllNumberArticle}
+          setElements={setElements}
+          elements={elements}
         />
       ))}
     </section>

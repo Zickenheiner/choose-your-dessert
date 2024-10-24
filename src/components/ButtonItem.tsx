@@ -1,33 +1,26 @@
 import "../styles/ButtonItem.css";
-
-interface ButtonItemProps {
-  numberArticle: number;
-  allNumberArticle: number;
-  setNumberArticle: (index: number) => void;
-  setAllNumberArticle: (index: number) => void;
-}
+import type { ButtonItemProps } from "../type";
 
 export default function ButtonItem({
-  numberArticle,
   allNumberArticle,
-  setNumberArticle,
   setAllNumberArticle,
+  setElements,
+  element,
+  elements,
 }: ButtonItemProps) {
+  const handlClickAddToCart = () => {
+    setAllNumberArticle(allNumberArticle + 1);
+    setElements([...elements, element]);
+  };
+
   return (
-    <button
-      type="button"
-      className="button-item"
-      onClick={() => {
-        setAllNumberArticle(allNumberArticle + 1);
-        setNumberArticle(numberArticle + 1);
-      }}
-    >
+    <button type="button" className="button-item" onClick={handlClickAddToCart}>
       <img
         src="/src/assets/images/icon-add-to-cart.svg"
         alt="icon-add-to-card"
         className="img-add-to-card"
       />
-      <p>Add to Card</p>
+      <p>Add to Cart</p>
     </button>
   );
 }
