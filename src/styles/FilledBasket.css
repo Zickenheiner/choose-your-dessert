@@ -1,0 +1,50 @@
+.filled-basket-item-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+}
+
+.filled-basket-order-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.filled-basket-price-container {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.filled-basket-carbon-neutral {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAF9F6;
+    gap: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+}
+
+
+.filled-basket-button {
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.filled-basket-button:hover {
+    background-color: #99391b;
+}

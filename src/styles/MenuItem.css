@@ -1,14 +1,20 @@
 .img-dessert {
     width: 100%;
     border-radius: 10px;
-    margin: 20px 0 20px 0;
+    margin: 0 0 20px 0;
+    border: 3px solid transparent;
     z-index: -0;
+}
+
+.img-dessert-border {
+    border: 3px solid var(--main-color);
 }
 
 h3 {
     color: var(--main-color);
     font-weight: 500;
 }
+
 
 .item-dessert {
     display: flex;
@@ -33,3 +39,5 @@ h3 {
     font-size: 1.2rem;
     font-weight: 500;
 }
+
+
