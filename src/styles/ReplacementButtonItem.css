@@ -29,3 +29,9 @@
     background-color: #99391b;
 }
 
+
+@media screen and (min-width: 721px) {
+    .remplacement-button-item {
+        width: 70%;
+    }
+}

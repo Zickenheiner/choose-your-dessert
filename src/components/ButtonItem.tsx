@@ -16,7 +16,7 @@ export default function ButtonItem({
   return (
     <button type="button" className="button-item" onClick={handlClickAddToCart}>
       <img
-        src="/src/assets/images/icon-add-to-cart.svg"
+        src="/assets/images/icon-add-to-cart.svg"
         alt="icon-add-to-card"
         className="img-add-to-card"
       />
