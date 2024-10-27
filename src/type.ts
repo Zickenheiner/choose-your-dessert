@@ -27,6 +27,7 @@ export interface BasketProps {
   elements: Element[];
   setElements: (elements: Element[]) => void;
   setAllNumberArticle: (allNumberArticle: number) => void;
+  setModal: (modal: boolean) => void;
 }
 
 export interface BasketItemProps {
@@ -69,4 +70,25 @@ export interface FilledBasketProps {
   setElements: (elements: Element[]) => void;
   allNumberArticle: number;
   setAllNumberArticle: (allNumberArticle: number) => void;
+  setModal: (modal: boolean) => void;
+}
+
+export interface ModalOrderConfirmProps {
+  elements: Element[];
+  setModal: (modal: boolean) => void;
+  setElements: (elements: Element[]) => void;
+  setAllNumberArticle: (allNumberArticle: number) => void;
+}
+
+export interface ModalItemProps {
+  element: Element;
+}
+
+export interface ImageProps {
+  image: {
+    thumbnail: string;
+    mobile: string;
+    tablet: string;
+    desktop: string;
+  };
 }

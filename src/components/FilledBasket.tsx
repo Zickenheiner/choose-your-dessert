@@ -8,6 +8,7 @@ export default function FilledBasket({
   setElements,
   allNumberArticle,
   setAllNumberArticle,
+  setModal,
 }: FilledBasketProps) {
   const [allPrice, setAllPrice] = useState<number>(0);
 
@@ -19,7 +20,9 @@ export default function FilledBasket({
     setAllPrice(count);
   }, [elements]);
 
-  const handleClickConfirmOrder = () => {};
+  const handleClickConfirmOrder = () => {
+    setModal(true);
+  };
 
   return (
     <div>

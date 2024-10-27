@@ -4,12 +4,12 @@
     width: 50%;
     height: 40px;
     margin-top: -40px;
+    padding: 15px;
     border-radius: 50px;
     font-size: 12px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 50px;
     z-index: 1;
 }
 
@@ -28,3 +28,4 @@
 .button-increment-decrement:hover {
     background-color: #99391b;
 }
+

@@ -8,6 +8,7 @@ export default function Basket({
   elements,
   setElements,
   setAllNumberArticle,
+  setModal,
 }: BasketProps) {
   return (
     <section className="basket">
@@ -20,6 +21,7 @@ export default function Basket({
           setElements={setElements}
           allNumberArticle={allNumberArticle}
           setAllNumberArticle={setAllNumberArticle}
+          setModal={setModal}
         />
       )}
     </section>

@@ -1,8 +1,17 @@
 .basket {
     background-color: white;
     width: 100%;
+    max-width: 500px;
     border-radius: 10px;
-    margin: 20px 0 20px 0;
+    margin-top: 20px;
     padding: 20px;
     color: var(--main-color);
+}
+
+@media screen and (min-width: 721px) {
+    .basket {
+        max-width: 400px;
+        min-width: 325px;
+        height: min-content;
+    }
 }

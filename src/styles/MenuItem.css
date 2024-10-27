@@ -41,3 +41,22 @@ h3 {
 }
 
 
+
+@media screen and (min-width: 721px) {
+    .item-dessert {
+        max-width: 31%;
+    }
+    .text-caterogy {
+        font-size: 0.7rem;
+    }
+    
+    .text-name {
+        font-size: 0.8rem;
+    }
+    h3 {
+        font-size: 0.8rem;
+    }
+    .text-container {
+        margin: 0;
+    }
+}

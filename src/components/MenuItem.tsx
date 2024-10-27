@@ -2,6 +2,7 @@ import "../styles/MenuItem.css";
 import ButtonItem from "./ButtonItem";
 import ReplacementButtonItem from "./ReplacementButtonItem";
 import type { Element, ItemProps } from "../type";
+import { useEffect, useState } from "react";
 
 export default function MenuItem({
   name,
@@ -14,8 +15,28 @@ export default function MenuItem({
   setElements,
   elements,
 }: ItemProps) {
+  const [width, setWidth] = useState(window.innerWidth);
   const itemInCart = elements.find((item) => item.id === id);
   const numberArticle = itemInCart ? itemInCart.number : 0;
+  let imageDessert = "";
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  if (width > 1024) {
+    imageDessert = image.desktop;
+  } else if (width > 720) {
+    imageDessert = image.tablet;
+  } else {
+    imageDessert = image.mobile;
+  }
 
   const element: Element = {
     name: name,
@@ -27,7 +48,7 @@ export default function MenuItem({
   return (
     <article className="item-dessert">
       <img
-        src={image.mobile}
+        src={imageDessert}
         alt="img-dessert"
         className={
           numberArticle === 0 ? "img-dessert" : "img-dessert-border img-dessert"
