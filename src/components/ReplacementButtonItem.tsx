@@ -41,7 +41,7 @@ export default function ReplacementButtonItem({
         onClick={handleClickDecrement}
       >
         <img
-          src="/assets/images/icon-decrement-quantity.svg"
+          src="./assets/images/icon-decrement-quantity.svg"
           alt="button-decrement"
         />
       </button>
@@ -52,7 +52,7 @@ export default function ReplacementButtonItem({
         onClick={handleClickIncrement}
       >
         <img
-          src="/assets/images/icon-increment-quantity.svg"
+          src="./assets/images/icon-increment-quantity.svg"
           alt="button-increment"
         />
       </button>

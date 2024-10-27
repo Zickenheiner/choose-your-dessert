@@ -48,7 +48,7 @@ export default function FilledBasket({
         </div>
         <div className="filled-basket-carbon-neutral">
           <img
-            src="/assets/images/icon-carbon-neutral.svg"
+            src="./assets/images/icon-carbon-neutral.svg"
             alt="icon-carbon-neutral"
           />
           <p>

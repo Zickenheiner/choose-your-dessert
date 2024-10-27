@@ -4,7 +4,7 @@ export default function () {
   return (
     <div className="empty-basket-container">
       <img
-        src="/assets/images/illustration-empty-cart.svg"
+        src="./assets/images/illustration-empty-cart.svg"
         alt="img-empty-basket"
         className="img-empty-basket"
       />

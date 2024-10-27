@@ -50,7 +50,7 @@ export default function ModalOrderConfirm({
         <section className="header-container">
           <div className="header-modal">
             <img
-              src="/assets/images/icon-order-confirmed.svg"
+              src="./assets/images/icon-order-confirmed.svg"
               alt="icon-order-confirmed"
             />
             <button
@@ -59,7 +59,7 @@ export default function ModalOrderConfirm({
               onClick={handleClickClose}
             >
               <img
-                src="/assets/images/icon-remove-item.svg"
+                src="./assets/images/icon-remove-item.svg"
                 alt="icon-remove"
               />
             </button>
