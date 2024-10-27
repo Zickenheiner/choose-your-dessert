@@ -1,0 +1,121 @@
+.modal-background {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.513);
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.modal-container {
+    width: 100vw;
+    max-width: 500px;
+    height: auto;
+    max-height: 90vh;
+    background-color: white;
+    z-index: 3;
+    border-radius: 20px 20px 0 0;
+    padding: 20px 20px 20px 20px;
+    animation: animation-modal 1s;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@keyframes animation-modal {
+    0%{
+        transform: translateY(700px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+.header-modal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-close-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    border: 1px solid #CDBAB3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.modal-close-button:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+.modal-button-confirm {
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-button-confirm:hover {
+    background-color: #99391b;
+}
+
+.modal-items-container {
+    overflow-y: scroll;
+    height: auto;
+}
+
+.modal-order-and-item-container {
+    padding: 10px 20px 20px 20px;
+    height: auto;
+    max-height: 350px;
+    background-color: #FAF9F6;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.modal-order-total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.modal-enjoy-text {
+    color: rgb(149, 149, 149); 
+}
+
+@media screen and (min-width: 500px) {
+    .modal-background {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    .modal-background {
+        align-items: center;
+    }
+    .modal-container {
+        border-radius: 20px;
+    }
+}

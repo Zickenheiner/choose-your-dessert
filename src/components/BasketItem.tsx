@@ -21,7 +21,7 @@ export default function BasketItem({
     <div className="basket-item-container">
       <div className="basket-item-text-container">
         <h4 className="basket-item-name">{name}</h4>
-        <div className="basket-item-info-constainer">
+        <div className="basket-item-info-container">
           <p className="basket-item-number">{number}x</p>
           <p className="basket-item-price">${price}</p>
           <p className="basket-item-price-multiply-number">

@@ -1,5 +1,6 @@
 .button-item {
     background-color: white;
+    color: black;
     width: 50%;
     height: 40px;
     margin-top: -40px;
@@ -15,7 +16,8 @@
 }
 
 .button-item:hover {
-    background-color: #f4f4f4;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
 }
 
 .img-add-to-card {

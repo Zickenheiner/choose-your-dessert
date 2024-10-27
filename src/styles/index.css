@@ -7,9 +7,14 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scrollbar-width: none;
 }
 
 body {
   background-color: #fcf8f5;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
