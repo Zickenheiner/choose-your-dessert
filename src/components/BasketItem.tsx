@@ -34,10 +34,7 @@ export default function BasketItem({
         className="delete-item-basket"
         onClick={handleClickDeleteItem}
       >
-        <img
-          src="/src/assets/images/icon-remove-item.svg"
-          alt="icon-remove-item"
-        />
+        <img src="/assets/images/icon-remove-item.svg" alt="icon-remove-item" />
       </button>
     </div>
   );
